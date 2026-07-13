@@ -75,7 +75,7 @@
       <div>
         <div class="stat-row">
           <div class="stat-card"><strong>1+</strong><span>Yrs Experience</span></div>
-          <div class="stat-card"><strong>6</strong><span>Live Projects</span></div>
+          <div class="stat-card"><strong>1</strong><span>Live Projects</span></div>
           <div class="stat-card"><strong>2</strong><span>Companies</span></div>
         </div>
         <div class="stat-row" style="grid-template-columns:1fr;">
@@ -172,15 +172,24 @@
 
 <section id="projects" style="background:var(--bg-alt);">
   <div class="container">
+
     <div class="sec-head">
       <span class="eyebrow">Projects</span>
       <h2>Live sites and practice builds.</h2>
     </div>
+
+    <!-- Filter Buttons -->
     <div class="proj-filter">
-      <span class="active">All</span><span>WordPress</span><span>Frontend</span><span>Client Work</span>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="wordpress">WordPress</button>
+      <button class="filter-btn" data-filter="frontend">Frontend</button>
+      <button class="filter-btn" data-filter="client">Client Work</button>
     </div>
+
     <div class="proj-grid">
-      <div class="proj-card">
+
+      <!-- GLI Pakistan -->
+      <div class="proj-card" data-category="wordpress client">
         <div class="proj-top">
           <span class="proj-tag">Client Site</span>
           <div class="proj-init">GL</div>
@@ -188,11 +197,18 @@
         <div class="proj-body">
           <h4>GLI Pakistan</h4>
           <p>Live business website built and deployed for a client, focused on clean structure and responsive layout.</p>
-          <div class="proj-feats"><span>WordPress</span><span>Responsive</span></div>
-          <div class="proj-actions"><a href="http://glipk.com/" target="_blank">Visit Site →</a></div>
+          <div class="proj-feats">
+            <span>WordPress</span>
+            <span>Responsive</span>
+          </div>
+          <div class="proj-actions">
+            <a href="http://glipk.com/" target="_blank">Visit Site →</a>
+          </div>
         </div>
       </div>
-      <div class="proj-card">
+
+      <!-- Restaurant -->
+      <div class="proj-card" data-category="frontend">
         <div class="proj-top">
           <span class="proj-tag">Frontend</span>
           <div class="proj-init">RS</div>
@@ -200,11 +216,19 @@
         <div class="proj-body">
           <h4>Restaurant Landing Page</h4>
           <p>A restaurant-themed landing page practice build focused on menu presentation and visual appeal.</p>
-          <div class="proj-feats"><span>HTML</span><span>CSS</span><span>JS</span></div>
-          <div class="proj-actions"><a href="https://dayyan242.github.io/Restaurant/" target="_blank">View Live →</a></div>
+          <div class="proj-feats">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </div>
+          <div class="proj-actions">
+            <a href="https://dayyan242.github.io/Restaurant/" target="_blank">View Live →</a>
+          </div>
         </div>
       </div>
-      <div class="proj-card">
+
+      <!-- Portfolio -->
+      <div class="proj-card" data-category="frontend">
         <div class="proj-top">
           <span class="proj-tag">Portfolio</span>
           <div class="proj-init">PF</div>
@@ -212,11 +236,19 @@
         <div class="proj-body">
           <h4>Personal Portfolio (v1)</h4>
           <p>An earlier personal portfolio build showcasing skills, projects, and contact details.</p>
-          <div class="proj-feats"><span>HTML</span><span>CSS</span><span>Bootstrap</span></div>
-          <div class="proj-actions"><a href="https://dayyan242.github.io/Dayyan-Portfolio/" target="_blank">View Live →</a></div>
+          <div class="proj-feats">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Bootstrap</span>
+          </div>
+          <div class="proj-actions">
+            <a href="https://dayyan242.github.io/Dayyan-Portfolio/" target="_blank">View Live →</a>
+          </div>
         </div>
       </div>
-      <div class="proj-card">
+
+      <!-- Agency -->
+      <div class="proj-card" data-category="frontend">
         <div class="proj-top">
           <span class="proj-tag">Frontend</span>
           <div class="proj-init">AG</div>
@@ -224,11 +256,19 @@
         <div class="proj-body">
           <h4>Agency Landing Page</h4>
           <p>A digital agency-style landing page with service sections and a modern, structured layout.</p>
-          <div class="proj-feats"><span>HTML</span><span>CSS</span><span>JS</span></div>
-          <div class="proj-actions"><a href="https://dayyan242.github.io/agency/" target="_blank">View Live →</a></div>
+          <div class="proj-feats">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </div>
+          <div class="proj-actions">
+            <a href="https://dayyan242.github.io/agency/" target="_blank">View Live →</a>
+          </div>
         </div>
       </div>
-      <div class="proj-card">
+
+      <!-- Flower Shop -->
+      <div class="proj-card" data-category="frontend">
         <div class="proj-top">
           <span class="proj-tag">Frontend</span>
           <div class="proj-init">FL</div>
@@ -236,22 +276,37 @@
         <div class="proj-body">
           <h4>Flower Shop Website</h4>
           <p>A visual-first flower shop concept site built to practice product presentation and layout design.</p>
-          <div class="proj-feats"><span>HTML</span><span>CSS</span><span>JS</span></div>
-          <div class="proj-actions"><a href="https://dayyan242.github.io/flower/" target="_blank">View Live →</a></div>
+          <div class="proj-feats">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </div>
+          <div class="proj-actions">
+            <a href="https://dayyan242.github.io/flower/" target="_blank">View Live →</a>
+          </div>
         </div>
       </div>
-      <div class="proj-card">
+
+      <!-- SurBeats -->
+      <div class="proj-card" data-category="frontend">
         <div class="proj-top">
           <span class="proj-tag">E-Project</span>
           <div class="proj-init">SB</div>
         </div>
         <div class="proj-body">
           <h4>SurBeats</h4>
-          <p>An e-project focused on music/beats platform concept, built as part of practical coursework.</p>
-          <div class="proj-feats"><span>HTML</span><span>CSS</span><span>JS</span></div>
-          <div class="proj-actions"><a href="https://github.com/dayyan242/E-Project-SurBeats" target="_blank">View Code →</a></div>
+          <p>An e-project focused on a music platform concept, built as part of practical coursework.</p>
+          <div class="proj-feats">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </div>
+          <div class="proj-actions">
+            <a href="https://github.com/dayyan242/E-Project-SurBeats" target="_blank">View Code →</a>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>

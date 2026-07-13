@@ -12,3 +12,31 @@
     nav.style.padding = '20px';
     nav.style.gap = '16px';
   });
+
+  const filterBtns = document.querySelectorAll(".filter-btn");
+const cards = document.querySelectorAll(".proj-card");
+
+filterBtns.forEach(btn => {
+
+    btn.addEventListener("click", () => {
+
+        document.querySelector(".filter-btn.active").classList.remove("active");
+        btn.classList.add("active");
+
+        const filter = btn.dataset.filter;
+
+        cards.forEach(card => {
+
+            const category = card.dataset.category;
+
+            if(filter === "all" || category.includes(filter)){
+                card.classList.remove("hide");
+            }else{
+                card.classList.add("hide");
+            }
+
+        });
+
+    });
+
+});
